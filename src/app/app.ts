@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Post } from './post/post';
 
 @Component({
     // decorators
@@ -7,6 +8,7 @@ import { Component, signal } from '@angular/core';
     standalone: true, // that we are not using moduels
     templateUrl: './app.html',
     styleUrls: ['./app.css'],
+    imports: [Post],
     // styles: [''], // inline css
 })
 export class App {
