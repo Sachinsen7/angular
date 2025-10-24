@@ -47,3 +47,8 @@ Property binding
 Event Binding ()
 
 type assertions
+
+Creating a component
+
+Emitting Events
+We can communicate with parent components by emitting events
