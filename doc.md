@@ -32,3 +32,8 @@ Model View Controller
 Model = Data
 View = HTML
 Controller = Typescript Class
+
+Signals
+
+When an application reactions to changes.
+A signal is a value tracked by Angular.
