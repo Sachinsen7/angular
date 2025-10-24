@@ -11,11 +11,13 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
     name = signal('Sachin');
-    imageUrl = signal(
-        'https://images.unsplash.com/photo-1761165308297-6aa2e5fb8fe7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=1600'
-    );
+    imageUrl = signal('https://picsum.photos/200/300');
 
     getName() {
         return this.name();
+    }
+
+    changeImage(event: KeyboardEvent) {
+        this.imageUrl.set((event.target as HTMLInputElement).value); // type assertions
     }
 }
