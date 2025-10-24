@@ -37,3 +37,8 @@ Signals
 
 When an application reactions to changes.
 A signal is a value tracked by Angular.
+
+An expression is a single line of code that evaluates to a value. The
+value may be a number, string or a logical value.
+
+Property binding
