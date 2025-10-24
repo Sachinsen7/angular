@@ -42,3 +42,8 @@ An expression is a single line of code that evaluates to a value. The
 value may be a number, string or a logical value.
 
 Property binding
+[]
+
+Event Binding ()
+
+type assertions
