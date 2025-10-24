@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
     // decorators
@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.css'],
     // styles: [''], // inline css
 })
-export class App {}
+export class App {
+    name = signal('Sachin');
+}
