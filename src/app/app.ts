@@ -13,7 +13,7 @@ import { Post } from './post/post';
 })
 export class App {
     name = signal('Sachin');
-    imageUrl = signal('https://picsum.photos/200/300');
+    imageUrl = signal('https://picsum.photos/id/237/200/300');
 
     getName() {
         return this.name();
@@ -21,5 +21,9 @@ export class App {
 
     changeImage(event: KeyboardEvent) {
         this.imageUrl.set((event.target as HTMLInputElement).value); // type assertions
+    }
+
+    logImage(event: string) {
+        console.log(event);
     }
 }
