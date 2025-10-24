@@ -1,9 +1,9 @@
-<img [src]="imageUrl()" alt="" />
-
 <p>{{ name().toLowerCase() }}</p>
 <p>{{ getName() }}</p>
 <p>{{ 5 + 2 }}</p>
 
-// event binding
+<app-post [postImage]="imageUrl()"></app-post>
+
+<!-- // event binding -->
 
 <input (keyup)="changeImage($event)" [value]="imageUrl()" />
