@@ -67,3 +67,19 @@ Commonly used hooks
 Hooks that run more than once
 can impact the performance of
 your app.
+
+Understanding Pipes
+A feature for transforming data in the template
+
+Functions for transforming values
+Original Value => Pipe (Function) => New Value
+
+Pipes
+
+TitleCasePipe
+
+Angular Dev Tools
+
+Pipes Parameters
+
+Dealing with numbers
