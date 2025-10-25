@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { Post } from './post/post';
+import { TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe } from '@angular/common';
 
 @Component({
     // decorators
@@ -8,12 +9,14 @@ import { Post } from './post/post';
     standalone: true, // that we are not using moduels
     templateUrl: './app.html',
     styleUrls: ['./app.css'],
-    imports: [Post],
+    imports: [Post, TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe],
     // styles: [''], // inline css
 })
 export class App {
     name = signal('Sachin');
     imageUrl = signal('https://picsum.photos/id/237/200/300');
+    currentDate = signal(new Date());
+    cost = signal(2000);
 
     getName() {
         return this.name();
