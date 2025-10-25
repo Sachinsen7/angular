@@ -23,6 +23,11 @@ import { CommonModule } from '@angular/common';
 export class App {
     name = signal('Sachin');
     imageUrl = signal('https://picsum.photos/id/237/200/300');
+    images = signal([
+        'https://picsum.photos/id/237/200/300',
+        'https://picsum.photos/id/238/200/300',
+        'https://picsum.photos/id/239/200/300',
+    ]);
     currentDate = signal(new Date());
     cost = signal(2000);
     temparature = signal(25.3);
