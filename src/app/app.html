@@ -1,3 +1,13 @@
+<button
+    [ngStyle]="{ 'font-size.px': fontSize() }"
+    (click)="blueClass.set(!blueClass())"
+    [ngClass]="{ blue: blueClass() }"
+>
+    Click Me!
+</button>
+
+<hr />
+
 <p>{{ name().toLowerCase() | titlecase }}</p>
 <p>{{ getName() }}</p>
 <p>{{ 5 + 2 }}</p>
@@ -14,4 +24,8 @@
 <input (keyup)="changeImage($event)" [value]="imageUrl()" />
 <p>{{ currentDate() | date : 'MMMM d' }}</p>
 <!-- read docs for the formats -->
-<p>{{ cost() | currency }}</p>
+<p>{{ cost() | currency : 'INR' }}</p>
+<p>{{ temparature() | number : '1.0-0' }}</p>
+<!-- max-min -->
+
+<pre>{{ pizza() | json }}</pre>
