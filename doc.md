@@ -83,3 +83,14 @@ Angular Dev Tools
 Pipes Parameters
 
 Dealing with numbers
+
+Json Pipe
+
+Understanding directives
+
+Attribute Directives
+Changes the appearance or
+behavior of an element
+
+the ngClass directives
+the ngStyle directives
