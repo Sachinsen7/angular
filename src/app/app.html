@@ -1,4 +1,4 @@
-<p>{{ name().toLowerCase() }}</p>
+<p>{{ name().toLowerCase() | titlecase }}</p>
 <p>{{ getName() }}</p>
 <p>{{ 5 + 2 }}</p>
 
@@ -12,3 +12,6 @@
 <!-- // event binding -->
 
 <input (keyup)="changeImage($event)" [value]="imageUrl()" />
+<p>{{ currentDate() | date : 'MMMM d' }}</p>
+<!-- read docs for the formats -->
+<p>{{ cost() | currency }}</p>
