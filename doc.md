@@ -57,3 +57,13 @@ Content Projection
 
 lifecycle hooks: ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked,
 ngAfterViewInit, ngAfterViewChecked, ngOnDestroy
+
+Commonly used hooks
+• constructor()
+• ngOnInit()
+• ngOnChanges()
+• ngOnDestroy()
+
+Hooks that run more than once
+can impact the performance of
+your app.
