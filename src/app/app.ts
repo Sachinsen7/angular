@@ -1,6 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { Post } from './post/post';
-import { TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe } from '@angular/common';
+// import {
+//     TitleCasePipe,
+//     DatePipe,
+//     CurrencyPipe,
+//     DecimalPipe,
+//     JsonPipe,
+//     NgClass,
+// } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
     // decorators
@@ -9,7 +17,7 @@ import { TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe } from '@angular/com
     standalone: true, // that we are not using moduels
     templateUrl: './app.html',
     styleUrls: ['./app.css'],
-    imports: [Post, TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe],
+    imports: [Post, CommonModule],
     // styles: [''], // inline css
 })
 export class App {
@@ -17,6 +25,13 @@ export class App {
     imageUrl = signal('https://picsum.photos/id/237/200/300');
     currentDate = signal(new Date());
     cost = signal(2000);
+    temparature = signal(25.3);
+    pizza = signal({
+        toppings: ['pepperoni', 'mushrooms', 'olives'],
+        size: 'large',
+    });
+    blueClass = signal(false);
+    fontSize = signal(16);
 
     getName() {
         return this.name();
