@@ -52,3 +52,8 @@ Creating a component
 
 Emitting Events
 We can communicate with parent components by emitting events
+
+Content Projection
+
+lifecycle hooks: ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked,
+ngAfterViewInit, ngAfterViewChecked, ngOnDestroy
