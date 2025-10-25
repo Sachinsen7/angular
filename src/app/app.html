@@ -1,3 +1,7 @@
+@if(blueClass()){
+<p>Blue Class!</p>
+}
+
 <button
     [ngStyle]="{ 'font-size.px': fontSize() }"
     (click)="blueClass.set(!blueClass())"
@@ -13,11 +17,14 @@
 <p>{{ 5 + 2 }}</p>
 
 <!-- <app-post [postImage]="imageUrl()"></app-post> -->
-<app-post [postImage]="imageUrl()" (imageSelected)="logImage($event)">
+@for (image of images(); let idx = $index; track idx) {
+<app-post [postImage]="image" (imageSelected)="logImage($event)">
     <p>Hello Albus</p>
+    <p>{{ idx }}</p>
     <!-- content projection -->
     <!-- {{ postImage() }} -->
 </app-post>
+}
 
 <!-- // event binding -->
 
