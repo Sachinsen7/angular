@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-post',
@@ -6,7 +6,15 @@ import { Component, input, output } from '@angular/core';
     templateUrl: './post.html',
     styleUrl: './post.css',
 })
-export class Post {
+export class Post implements OnInit {
     postImage = input.required<string>(); // input property decorator
     imageSelected = output<string>(); // output property decorator
+
+    constructor() {
+        console.log('constructor()');
+    }
+
+    ngOnInit() {
+        console.log('ngonInit() called');
+    }
 }
