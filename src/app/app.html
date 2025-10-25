@@ -3,7 +3,10 @@
 <p>{{ 5 + 2 }}</p>
 
 <!-- <app-post [postImage]="imageUrl()"></app-post> -->
-<app-post [postImage]="imageUrl()" (imageSelected)="logImage($event)"></app-post>
+<app-post [postImage]="imageUrl()" (imageSelected)="logImage($event)">
+    <p>Hello Albus</p>
+    <!-- content projection -->
+</app-post>
 
 <!-- // event binding -->
 
